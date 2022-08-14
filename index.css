@@ -67,3 +67,40 @@ body {
   font-size: 1.7rem;
   color: #717078;
 }
+
+#toggle {
+  display: flex;
+
+  align-items: center;
+}
+
+.toggle-text {
+  font-size: 1.7rem;
+  color: #717078;
+}
+
+.toggle-btn {
+  height: 30px;
+  width: 60px;
+  background-color: #717078;
+  border-radius: 30px;
+  padding: 5px;
+  margin: 0 10px;
+}
+
+.inner-circle {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #E0E0E0;
+  transition: all 250ms;
+}
+
+.toggle-btn.toggled>.inner-circle {
+  transform: translateX(30px);
+  background-color: #333;
+}
+
+.unselected {
+  opacity: 0.5;
+}
