@@ -1,10 +1,3 @@
-/* #84828F
-6a687a
-#536271
-#3E4C5E
-#948D9B
-2c3d55 */
-
 html,
 body {
   margin: 0;
@@ -17,15 +10,19 @@ body {
   text-align: center;
   font-size: 5em;
   color: #717078;
-  /* color: #84828F; */
   padding-top: 5%;
+  margin-bottom: 3%;
 }
 
 #input-container {
-  padding-left: 20%;
+  padding-left: 25%;
+  margin: 0 auto;
+  padding-top: 1px;
 }
 #color-container {
-  padding-left: 20%;
+  width: 50%;
+  margin: 0 auto;
+
 }
 
 #color-label {
@@ -38,19 +35,33 @@ body {
   color: #717078;
   background-color: #E0E0E0;
   border: 1px solid #717078;
-  margin-left: 25px;
   padding-left: 10px;
 }
 
 #sliderText {
   font-size: 2em;
   color: #717078;
- 
 }
 
-#slider {
-  padding-top: 30px;
-  margin-left: 25px;
+input[type=range] {
+  -webkit-appearance: none;
+  width: 300px;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 300px;
+  height: 30px;
+  background: #717078;
+  border: none;
+  border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 100%;
+  width: 25px;
+  background: #E0E0E0;
+  border: 1px solid #717078;
 }
 
 .box {
